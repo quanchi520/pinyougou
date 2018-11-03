@@ -10,6 +10,7 @@ import com.pinyougou.sellergoods.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class BrandServiceImpl implements BrandService {
@@ -51,4 +52,10 @@ public class BrandServiceImpl implements BrandService {
             tbBrandMapper.deleteByPrimaryKey(id);
         }
     }
+
+    @Override
+    public List<Map> SelectBrandList() {
+        return tbBrandMapper.findSelectBrandList();
+    }
+
 }

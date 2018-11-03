@@ -4,6 +4,7 @@ import com.pinyougou.pojo.TbBrand;
 import com.pinyougou.entity.PageResult;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BrandService {
 
@@ -18,4 +19,7 @@ public interface BrandService {
     void update(TbBrand tbBrand);
 
     void dele(Long[] ids);
+
+    List<Map> SelectBrandList();
+
 }

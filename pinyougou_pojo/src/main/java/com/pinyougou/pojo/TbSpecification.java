@@ -1,6 +1,8 @@
 package com.pinyougou.pojo;
 
-public class TbSpecification {
+import java.io.Serializable;
+
+public class TbSpecification implements Serializable{
     private Long id;
 
     private String specName;
@@ -20,4 +22,5 @@ public class TbSpecification {
     public void setSpecName(String specName) {
         this.specName = specName == null ? null : specName.trim();
     }
+
 }

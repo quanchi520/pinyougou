@@ -20,9 +20,11 @@ app.service("brandService", function ($http) {
     }
 
     this.dele = function (ids) {
-        alert(ids)
         return $http.get("../brand/delee.do?ids=" + ids)
-        alert(2)
+    }
+
+    this.selectBrandList = function () {
+        return $http.get("../brand/selectBrandList.do")
     }
 
 })
